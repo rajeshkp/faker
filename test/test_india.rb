@@ -29,5 +29,6 @@ class TestLocale < Test::Unit::TestCase
     puts "Country = #{Faker::Address.country}"
     puts "Internet =  #{Faker::Internet.free_email}"
     puts "Phone Number = #{Faker::PhoneNumber.phone_number}"
+    puts "Company Name = #{Faker::Company.name}"
   end
 end
