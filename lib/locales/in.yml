@@ -1,0 +1,122 @@
+in:
+  faker:
+    address:
+      city_prefix: [North, East, West, South]
+      city_town: [Chennai, Bangalore, Mumbai, Hyderabad, Kolkata, Delhi, Ahmedabad, Surat, Pune, Jaipur, Lucknow, Kanpur, Nagpur, Indore, Thane, Bhopal,  Vishakpatanam, Patna, Agra, Meerut, Nashik, Srinagar]
+      country: [India]
+      building_number: ['old##/new##', '##', '#', '###']
+      street_suffix: [Nagar, street, Avenue, cross ]
+      secondary_address: ['Apt. ###', 'Suite ###']
+      
+      postcode: ['######', '###-###', '### ###']
+      state: [ Madhya Pradesh, Tamil Nadu, Rajasthan, Karnataka, Gujarat, Orissa, Kerala, Jharkhand, Assam, Uttar Pradesh, Punjab, Haryana, Maharashtra, Assam, Bihar,  West Bengal, Andhra Pradesh ]
+      state_abbr: [UP, Ap, WB, MP, HP, TN, AP]
+      city:
+       
+        - "#{city_town}"
+        - "#{city_prefix} #{city_town}"
+        
+      street_name:
+        - "#{Name.boys_name} #{street_suffix}"
+        - "#{Name.girls_name} #{street_suffix}"
+      street_address:
+        - "#{building_number} #{street_name}"
+     
+
+    company:
+      suffix: [Inc, and Sons, LLC, Group, Ltd]
+
+      
+    internet:
+      free_email: [gmail.com, yahoo.com, hotmail.com]
+      domain_suffix: [in, biz, info, name, net, org]
+
+    lorem:
+      words: [East,west]
+      supplemental: [abbas, abduco]
+
+    name:
+      boys_name: ["Aakash", "Aditya", "Abhay",
+            "Abhinav", "Abhishek", "Abdul", "Afzal", "Ajay", "Ajith", "Akshay",
+            "Akhil", "Amir", "Amar", "Anand", "Anwar", "Aravind", "Arjun",
+            "Arun", "Ashok", "Ashwin", "Aziz", "Babu", "Balu", "Balaji",
+            "Baskar", "Balwindar", "Bipin", "Chetan", "Chakravarthi",
+            "Chandan", "Chandrasekar", "Charan", "Chetan", "Chintan", "Daniel",
+            "Danish", "David", "Deepak", "Dev", "Devraj", "Dilip", "Dinesh",
+            "Ganesh", "Gaurav", "Gautham", "George", "Giri", "Gokul", "Gopal",
+            "Hari", "Harish", "Harsh", "Hemanth", "Hamid", "Imran", "Irfaan",
+            "Isaac", "Ishan", "Kalam", "Kailash", "Kamesh", "Karthick",
+            "Kathir", "Kiran", "Kumar", "Lakshmanan", "Lokesh", "Madan",
+            "Madhav", "Mahendra", "Mani", "Manish", "Magesh", "Mallesh",
+            "Manoj", "Mayur", "Naresh", "Nagaraj", "Naveen", "Nikhil", "Nihal",
+            "Nirmal", "Niranjan", "Nandu", "Omprakash", "Palani", "Pallav",
+            "Pankaj", "Patel", "Prabhakar", "Pradeep", "Prasad", "Pratap",
+            "Prem", "Qasim", "Rahim", "Rahul", "Ramiz", "Radhakrishnan",
+            "Raghav", "Rajkumar", "Rajdeep", "Raja", "Rajan", "Rajesh", "Raju",
+            "Raman", "Ramesh", "Ramu", "Ranjan", "Ranjith", "Rashid", "Ravi",
+            "Ricky", "Rishy", "Rizwan", "Robert", "Rohan", "Rohit", "Roshan",
+            "Saahil", "Sachin", "Saif", "Samuel", "Samson", "Samir", "Satyan", "Sanjay",
+            "Santosh", "Somu", "Shahid", "Shakti", "Shakeel", "Sharma",
+            "Subash", "Sunil", "Sushil", "Suresh", "Sohail","Solomon", "Somesh",
+            "Sumanth", "Sundar", "Sushil", "Syed", "Taahir",
+            "Tanvir", "Tariq", "Tarun", "Tejas", "Trishul", "Udaya", "Umar",
+            "Umesh", "Unnikrishnan", "Vinay", "Uttam", "Vaibhav", "Varadaraj",
+            "Varun", "Vasanth", "Vedant", "Velan", "Venkat", "Venkataraman",
+            "Venkatesh", "Vibbav", "Vignesh", "Vijay", "Vikas", "Vikram",
+            "Vilas", "Vimal", "Vinay", "Vineet", "Vinoth", "Vipul", "Vishal",
+            "Vishvanath", "Vivek", "Vyas", "Wahid", "Waseem", "William",
+            "Xavier", "Yadav", "Yash", "Yeshwanth", "Yogesh", "Yoosuf",
+            "Yuvan", "Yuvraj", "Zaafir", "Zackery", "Zubin"]
+      girls_name: ["Aarthi", "Aarushi", "Amala",
+            "Abirami", "Adithi", "Afra", "Aisha", "Ajitha", "Akhila",
+            "Akshaya", "Alisha", "Ambika", "Ameena", "Amritha", "Annam",
+            "Anandi", "Angelina", "Anjali", "Anju", "Anupama", "Anuradha",
+            "Anitha", "Anusha", "Aparna", "Apurva", "Aqila", "Arpitha",
+            "Archana", "Asha", "Ashwini", "Atefeh", "Banu", "Beena", "Beulah",
+            "Bhanu", "Bhavani", "Bhuvana", "Brinda", "Caroline", "Catherine",
+            "Chandra", "Chitra", "Christina", "Clara", "Debbie", "Deepa",
+            "Deepika", "Devi", "Dharani", "Divya", "Dona", "Esha", "Esther",
+            "Evangelin", "Farah", "Fathima", "Gayathri", "Geetha", "Goldie",
+            "Gomathi", "Hannah", "Helen", "Hilda", "Indra", "Indhu", "Iris",
+            "Jameela", "Jamuna", "Janani", "Janani", "Jenifer", "Jasmin",
+            "Jayashree", "Jayanthi", "Joanne", "Joyce", "Julia", "Jyothi",
+            "Kalpana", "Kamala", "Kaavya", "Kala", "Kalyani", "Kamini",
+            "Kareena", "Karishma", "Karunya", "Kavery", "Kavitha", "Keerthana",
+            "Khushi", "Kokila", "Kumari", "Lakshmi", "Lalita", "Lata", "Leela",
+            "Lekha", "Lincy", "Mary", "Meena", "Maha", "Mallika", "Maya",
+            "Meena", "Monica", "Mythilli", "Nadia", "Nafeesa", "Nancy",
+            "Nisha", "Nalini", "Namita", "Nandini", "Naomi", "Nasreen",
+            "Neema", "Neelam", "Neetu", "Neha", "Nimi", "Nirmala", "Nikila",
+            "Nirupama", "Noorjehan", "Ovia", "Padma", "Padmini", "Pallavi",
+            "Pamela", "Parvathi", "Pavitra", "Philomena", "Pooja", "Prabha",
+            "Praveena", "Priya", "Priyanka", "Pushpa", "Radhika", "Rachel",
+            "Ramya", "Rani", "Reeta", "Rekha", "Revathi", "Reshma", "Renuka",
+            "Rita", "Roopa", "Roshni", "Salima", "Sakshi", "Salma", "Sameera",
+            "Sania", "Sadhana", "Samitha", "Sapna", "Saranya", "Satya",
+            "Savitha", "Seema", "Shabana", "Shanthi", "Sheena", "Shobana",
+            "Shirley", "Shridevi", "Sita", "Simran", "Sonia", "Soumya",
+            "Suganya", "Sujatha", "Sunita", "Suhasini", "Sushmitha", "Swarna",
+            "Swathi", "Sweety", "Swetha", "Tanya", "Tasneem", "Trisha",
+            "Urmila", "Usha", "Urvashi", "Ursula", "Uma", "Vaidehi",
+            "Vaishali", "Vaishnavi", "Vanessa", "Vani", "Varsha", "Vidhya",
+            "Vijayalakshmi", "Vimala", "Veena", "Vishalakshi", "Vishnupriya",
+            "Yamini", "Yashoda", "Yamuna", "Yasmin", "Yathra", "Zahira",
+            "Zara", "Zeenat"]
+      prefix: [ Mrs., Ms., Miss, Dr.]
+      boys_prefix: [ Mr., Dr.]
+
+      suffix: [ PhD, M.Sc, MA, ME, M.Tech, M.Com, BE, B.Tech, B.Com, B.Sc, BA]
+      title:
+        descriptor: [Lead, Senior, Direct, Corporate, Dynamic, Future, Product, National, Regional, District, Central, Global, Customer, Investor, Dynamic, International, Legacy, Forward, Internal, Human, Chief, Principal]
+        level: [Solutions, Program, Brand, Security, Research, Marketing, Directives, Implementation, Integration, Functionality, Response, Paradigm, Tactics, Identity, Markets, Group, Division, Applications, Optimization, Operations, Infrastructure, Intranet, Communications, Web, Branding, Quality, Assurance, Mobility, Accounts, Data, Creative, Configuration, Accountability, Interactions, Factors, Usability, Metrics]
+        job: [Supervisor, Associate, Executive, Liason, Officer, Manager, Engineer, Specialist, Director, Coordinator, Administrator, Architect, Analyst, Designer, Planner, Orchestrator, Technician, Developer, Producer, Consultant, Assistant, Facilitator, Agent, Representative, Strategist]
+      name:
+        - "#{prefix} #{girls_name} #{suffix}"
+        - "#{boys_prefix}#{boys_name} #{suffix}"
+        - "#{boys_name} #{suffix}"
+        - "#{girls_name} #{suffix}"
+        - "#{prefix} #{girls_name} 
+        - "#{boys_prefix}#{boys_name} 
+
+    phone_number:
+      formats: ['##########', '#####-#####', '(###)####-####', '#####-########']
