@@ -8,7 +8,7 @@ in:
       street_suffix: [Nagar, street, Avenue, cross ]
       secondary_address: ['Apt. ###', 'Suite ###']
       first_address: ["Gandhi", "Rajaji"]
-      postcode: ['######', '###-###', '### ###']
+      postcode: ['######']
       state: [ Madhya Pradesh, Pondicherry, Lakshadweep, Delhi, Dadra and Nagar Haveli, Chandigarh, Tripura, UttarKhand, Sikkim, Manipur, Nagaland, Tamil Nadu, Rajasthan, Karnataka, Gujarat, Orissa, Kerala, Jharkhand, Assam, Uttar Pradesh, Punjab, Haryana, Maharashtra, Assam, Bihar,  West Bengal, Andhra Pradesh ]
       state_abbr: [UP, AP, WB, MP, HP, TN, AP, AR, AS, BR, CG, GA, GJ, HR, JK, JH, KA, KL, MH, MN, ML, MZ, NL, OR, PB, RJ, SK, TR, UK, CH, DN, DD, DL, LD]
       city:
@@ -117,5 +117,5 @@ in:
         - "#{boys_prefix}#{boys_name}
 
     phone_number:
-      formats: ['###-########', '#####-########', '(###)########', '#####-########']
+      formats: ['011-########', '044-2#######', '0842-########', '022-########', '040-########', '0133-########', '08252-########', '02715-52####']
 
