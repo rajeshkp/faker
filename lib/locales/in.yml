@@ -7,37 +7,30 @@ in:
       building_number: ['old##/new##', '##', '#', '###']
       street_suffix: [Nagar, street, Avenue, cross ]
       secondary_address: ['Apt. ###', 'Suite ###']
-      
+      first_address: ["Gandhi", "Rajaji"]
       postcode: ['######', '###-###', '### ###']
-      state: [ Madhya Pradesh, Tamil Nadu, Rajasthan, Karnataka, Gujarat, Orissa, Kerala, Jharkhand, Assam, Uttar Pradesh, Punjab, Haryana, Maharashtra, Assam, Bihar,  West Bengal, Andhra Pradesh ]
-      state_abbr: [UP, Ap, WB, MP, HP, TN, AP]
+      state: [ Madhya Pradesh, Pondicherry, Lakshadweep, Delhi, Dadra and Nagar Haveli, Chandigarh, Tripura, UttarKhand, Sikkim, Manipur, Nagaland, Tamil Nadu, Rajasthan, Karnataka, Gujarat, Orissa, Kerala, Jharkhand, Assam, Uttar Pradesh, Punjab, Haryana, Maharashtra, Assam, Bihar,  West Bengal, Andhra Pradesh ]
+      state_abbr: [UP, AP, WB, MP, HP, TN, AP, AR, AS, BR, CG, GA, GJ, HR, JK, JH, KA, KL, MH, MN, ML, MZ, NL, OR, PB, RJ, SK, TR, UK, CH, DN, DD, DL, LD]
       city:
-       
+
         - "#{city_town}"
         - "#{city_prefix} #{city_town}"
-        
+
       street_name:
-        - "#{Name.boys_name} #{street_suffix}"
-        - "#{Name.girls_name} #{street_suffix}"
+        - "#{first_address} #{street_suffix}"
+       
       street_address:
         - "#{building_number} #{street_name}"
-     
+
 
     company:
-      suffix: [Inc, and Sons, LLC, Group, Ltd]
+      company_name: [NLC, SAIL, Bajaj, TCL, Microtek, TATA Motors, Pioneer, Whirlpool, Reliance, BSNL, Haldirams, Bharat Heavy Electronics Limited, Electrolex, Kelvinator, NMTC, PFC, REC, Bank of India, HDFC, HDFC Bank, ICICI Bank ]
 
-      company_name:
-        - "#{Name.last_name} #{suffix}"
-        - "#{Name.last_name}-#{Name.last_name}"
-        - "#{Name.last_name}, #{Name.last_name} and #{Name.last_name}"
-
+        
     internet:
       free_email: [gmail.com, yahoo.com, hotmail.com]
       domain_suffix: [in, biz, info, name, net, org]
-
-    lorem:
-      words: [East,west]
-      supplemental: [abbas, abduco]
+    
 
     name:
       boys_name: ["Aakash", "Aditya", "Abhay",
@@ -71,6 +64,7 @@ in:
             "Vishvanath", "Vivek", "Vyas", "Wahid", "Waseem", "William",
             "Xavier", "Yadav", "Yash", "Yeshwanth", "Yogesh", "Yoosuf",
             "Yuvan", "Yuvraj", "Zaafir", "Zackery", "Zubin"]
+
       girls_name: ["Aarthi", "Aarushi", "Amala",
             "Abirami", "Adithi", "Afra", "Aisha", "Ajitha", "Akhila",
             "Akshaya", "Alisha", "Ambika", "Ameena", "Amritha", "Annam",
@@ -119,8 +113,9 @@ in:
         - "#{boys_prefix}#{boys_name} #{suffix}"
         - "#{boys_name} #{suffix}"
         - "#{girls_name} #{suffix}"
-        - "#{prefix} #{girls_name} 
-        - "#{boys_prefix}#{boys_name} 
+        - "#{prefix} #{girls_name}
+        - "#{boys_prefix}#{boys_name}
 
     phone_number:
-      formats: ['##########', '#####-#####', '(###)####-####', '#####-########']
+      formats: ['###-########', '#####-########', '(###)########', '#####-########']
+
